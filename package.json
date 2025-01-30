@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "server": "npm i && nodemon server/src/index.js",
+    "server": "cd ./server && npm run dev",
     "client": "next dev",
     "build": "next build",
     "start": "next start",
